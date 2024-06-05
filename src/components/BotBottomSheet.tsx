@@ -50,8 +50,9 @@ const SheetComp = () => {
         containerRef
     );
     const image: ImageSliceType = useSelector((state: any) => state.image);
-    const CLOSE_ICON = image.optional.find((i) => i.name === 'CLOSE_ICON');
-    const COIN_IMG = image.core.find((i) => i.name === 'COIN_TOOL');
+    const CLOSE_ICON = image.core.find((i) => i.name === 'CLOSE_ICON');
+    const COIN_IMG = image.core.find((i) => i.name === 'COIN_ICON');
+    const AUTO_EARN_IMG = image.core.find((i) => i.name === 'AUTO_EARN_BOT');
 
     useModal();
     const onPurchaseHandler = () => {
@@ -71,29 +72,36 @@ const SheetComp = () => {
     return (
         <>
             <Sheet.Container
-                className='sheet-body'
+                className='bs-modal-container blur-round-border-bg' 
+                style={{
+                    '--angle': '125deg',
+                } as React.CSSProperties}
                 ref={containerRef}
                 {...overlay.overlayProps as any}
                 {...dialog.dialogProps as any}
             >
                 <Sheet.Header>{customHeader}</Sheet.Header>
                 <Sheet.Content>
-                    <div className="bs-container">
-                        <div style={{fontSize: '7rem'}}>🤖</div>
+                    <div className="bs-container items-stretch px-6">
+                        <img className='earn-user mx-auto' src={AUTO_EARN_IMG?.img?.src} alt='Auto earn bot' />
                         <div className='bot-bs-title'><p>+{numify(game.botEarn)}</p> {COIN_IMG ?
                             <img src={COIN_IMG?.img.src} alt='coin'/> : null}
                         </div>
                         <span className='bot-bs-subtitle'>Earned by Auto Tap bot for you</span>
-                        <div className='bs-inner-box glass'>
+                        <div className='bs-inner-box blur-round-border-bg my-6 items-center justify-items-center' style={{
+                            '--opacity': 0,
+                            '--blur': 0,
+                            '--angle': '170deg',
+                        } as React.CSSProperties}>
                             <div>
-                                <p>🦾</p>
+                                <p className='icon-autotap'></p>
                                 <div className='bs-inner-desc'>
                                     <p>Auto Tap</p>
                                     <p>if not played for 1 hour</p>
                                 </div>
                             </div>
                             <div>
-                                <p>⏳</p>
+                                <p className='icon-works'></p>
                                 <div className='bs-inner-desc'>
                                     <p>Works for</p>
                                     <p>12 hours</p>

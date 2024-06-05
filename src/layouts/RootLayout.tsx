@@ -1,4 +1,4 @@
-import {Outlet, useNavigate} from "react-router-dom";
+import {Outlet, useLocation, useNavigate, useNavigation, useParams} from "react-router-dom";
 import {useEffect} from "react";
 import WebApp from "@twa-dev/sdk";
 import {useDispatch, useSelector} from "react-redux";
@@ -216,13 +216,13 @@ const RootLayout = () => {
                     dispatch(setUserPurchaseReturn(data.user));
                     if (data.itemType == 'skin' || data.itemType == 'change_skin') {
                         dispatch(alterActiveSkinsImages(data.user.skin));
-                        navigate('/');
+                        navigate('/dashboard');
                     }
                     if (data.user.turbo != undefined && data.user.turbo.length > 0) {
                         dispatch(setAvailableTurbos(data.user.turbo))
                     }
                     if (data.itemType == 'daily_booster') {
-                        navigate('/')
+                        navigate('/dashboard')
                     }
                 } else {
                     showToast(purchase.toast, data.message, 'error')
@@ -244,7 +244,7 @@ const RootLayout = () => {
                 dispatch(setLeftDailyBoosts(data.user.boosts))
                 if (data.itemType == 'skin' || data.itemType == 'change_skin') {
                     dispatch(alterActiveSkinsImages(data.user.skin));
-                    navigate('/')
+                    navigate('/dashboard')
                 }
                 dispatch(setUserPurchaseReturn(data.user));
             }
@@ -279,8 +279,13 @@ const RootLayout = () => {
         if (user.data != null && user.data?.status == 'suspended')
             navigate('/banned')
     }, [user.data?.status]);
+    const location = useLocation();
     return image.isActiveSkinsDone && image.isCoreDone ? (
-        <div className="w-full"><Outlet/><BottomSheet/><BotBottomSheet/></div>) : (<div>
+        <div className="w-full">
+            <Outlet/>
+            <BottomSheet/>
+            {location.pathname == '/dashboard' && <BotBottomSheet/>}
+        </div>) : (<div>
         <div className='preloader flex items-center justify-around'>
             <div className="loader">
                 <div className="loader-inner ball-grid-pulse">

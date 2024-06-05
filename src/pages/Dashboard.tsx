@@ -26,12 +26,12 @@ const Dashboard = () => {
         dispatch(hideBottomSheet());
     }, [location]);
     return (
-        <div className='dashboard'>
-            <div className='add-pad'>
+        <div className='page-bg'>
+            <div className='add-pad tap z-[10]'>
                 <Score />
                 <CoinImage />
-                <League />
                 <Energy />
+                <League />
                 <DragonHead />
             </div>
             <DSTools />

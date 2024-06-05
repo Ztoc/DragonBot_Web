@@ -66,8 +66,8 @@ const SheetComp = () => {
         containerRef
     );
 
-    const COIN_IMG = image.core.find((i) => i.name === 'COIN_TOOL');
-    const CLOSE_IMG = image.optional.find((i) => i.name === 'CLOSE_ICON');
+    const COIN_IMG = image.core.find((i) => i.name === 'COIN_ICON');
+    const CLOSE_IMG = image.core.find((i) => i.name === 'CLOSE_ICON');
 
     useModal();
     const onPurchaseHandler = () => {
@@ -137,7 +137,7 @@ const SheetComp = () => {
     const skin_img = image.skin.find((x) => x.name == item.image)
 
 
-    const img = game.itemType == "daily_booster" && daily_img != undefined ? daily_img?.img : game.itemType == 'booster' && boost_img != undefined ? boost_img?.img : game.itemType == 'skin' && skin_img != undefined ? skin_img?.img.normal : null;
+    const img = game.itemType == "daily_booster" && daily_img != undefined ? daily_img?.img.big : game.itemType == 'booster' && boost_img != undefined ? boost_img?.img.big : game.itemType == 'skin' && skin_img != undefined ? skin_img?.img.normal : null;
     if (game.itemType == 'skin') {
         const uSkin = skins.userSkins.find((x) => x.skin_id == game.item.id);
         const ownSkin = uSkin != undefined;
@@ -146,15 +146,18 @@ const SheetComp = () => {
         return game.item == null ? <></> : (
             <>
                 <Sheet.Container
-                    className='sheet-body'
+                    className='sheet-body bs-modal-container blur-round-border-bg'
+                    style={{
+                        '--angle': '125deg',
+                    } as React.CSSProperties}
                     ref={containerRef}
                     {...overlay.overlayProps as any}
                     {...dialog.dialogProps as any}
                 >
                     <Sheet.Header>{customHeader}</Sheet.Header>
                     <Sheet.Content>
-                        <div className="bs-container">
-                            {img !== null ? <img className='bs-img' src={img.src}/> : <div className='bs-img'></div>}
+                        <div className="bs-container items-stretch px-6">
+                            {img !== null ? <img className='bs-img mx-auto' src={img.src}/> : <div className='bs-img mx-auto'></div>}
                             <div className='bs-title'>{item.name}</div>
                             <span className='bs-subtitle'>{item.description}</span>
                             {!ownSkin ? <div className='bs-pricing'>
@@ -175,15 +178,18 @@ const SheetComp = () => {
         return game.item == null ? <></> : (
             <>
                 <Sheet.Container
-                    className='sheet-body'
+                    className='sheet-body bs-modal-container blur-round-border-bg'
+                    style={{
+                        '--angle': '125deg',
+                    } as React.CSSProperties}
                     ref={containerRef}
                     {...overlay.overlayProps as any}
                     {...dialog.dialogProps as any}
                 >
                     <Sheet.Header>{customHeader}</Sheet.Header>
                     <Sheet.Content>
-                        <div className="bs-container">
-                            {img !== null ? <img className='bs-img' src={img.src}/> : <div className='bs-img'></div>}
+                        <div className="bs-container items-stretch px-6">
+                            {img !== null ? <img className='bs-img mx-auto' src={img.src}/> : <div className='bs-img mx-auto'></div>}
                             <div className='bs-title'>{item.name}</div>
                             <span className='bs-subtitle'>{item.description}</span>
                             {/*<span className='bs-over-subtitle'>{item.}</span>*/}

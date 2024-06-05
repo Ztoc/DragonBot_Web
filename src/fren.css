@@ -9,12 +9,12 @@
     justify-content: center;
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 .fren-bonues-title {
     font-size: 15px;
     font-weight: bold;
-    margin: 1em 0;
+    margin: 2em 0 1em;
     color: #FFD041;
 }
 .fren-bonues {
@@ -22,10 +22,8 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
-    background: #45444966;
     width: 100%;
     padding: 1.2em 1em;
-    border-radius: 15px;
 }
 .fren-box {
     display: flex;
@@ -53,8 +51,9 @@
     font-size: 13px;
 }
 .fren-bonus-amount > img {
-    width: 13px;
+    width: 15px;
     margin-right: 5px;
+    object-fit: contain;
 }
 .fren-bonus-amount > span:first-of-type {
     color: #FFD041;
@@ -73,13 +72,12 @@
 
 .fren-earned > img {
     margin-left: 8px;
-    width: 14px;
+    width: 20px;
 }
 
 .fren-earned {
     justify-content: center;
     width: auto;
-    padding-right: .5em;
     padding-left: 1.5em;
     color: #FFD041;
     font-size: 14px;
@@ -92,10 +90,8 @@
 
 .fren-info {
     justify-content: space-between;
-    background: #45444966;
     width: 100%;
-    padding: 1em 0em;
-    border-radius: 15px;
+    padding: 0.8em 0em;
 }
 
 .fren-opener-arrow {
@@ -104,13 +100,12 @@
 }
 
 .fren-earn-info {
-    padding-left: 10px;
     font-size: 16px;
 }
 
 .fren-earn-info > img {
     margin-right: 8px;
-    width: 15px;
+    width: 32px;
 }
 .fren-earn-info > .fren-emoji {
     font-size: 19px;
@@ -140,9 +135,7 @@
 }
 
 .fren-list {
-    background: #45444966;
     padding: .5em 0em;
-    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,6 +252,7 @@
 }
 .friend-league > img {
     width: 15px;
+    object-fit: contain;
 }
 .friend-league > span {
     font-size: 13px;
@@ -276,7 +270,8 @@
     opacity: .5;
 }
 .friend-coin > img {
-    width: 12px;
+    width: 15px;
+    object-fit: contain;
 }
 .friend-trailer-img {
     width: 7px;
@@ -318,20 +313,6 @@
     background-repeat: no-repeat;
     z-index: 100;
     padding-bottom: 2rem;
-}
-.fren-con:after {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    content: "";
-    z-index: 0;
-    background: linear-gradient(to top,
-    rgb(84, 43, 186) 20%,
-    rgba(255,255,255, 0) 80%
-    );
-    rotate: 180deg;
-    pointer-events: none; /* so the text is still selectable */
 }
 
 .fren-header-bg-effect {
@@ -383,4 +364,12 @@
     z-index: 100;
     width: 100%;
     padding: 1rem 1.5rem;
+}
+.fren-link {
+    color: #6AC9FF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    display: block;
 }

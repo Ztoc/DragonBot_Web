@@ -93,7 +93,7 @@ const LeagueHeader = () => {
             <div className='league-header'>
                 <img className='league-header-bg' src={leagueBg}/>
                 <DragonCoiners/>
-                <div className='flex justify-between items-center'>
+                <div className='flex justify-around items-center'>
                     {LEFT_ARROW_IMG ? <img className={'lh-img ' + (league.no == 1 ? 'opacity-less' : '')}
                                            src={LEFT_ARROW_IMG?.img.src}
                                            onClick={() => dispatch(prevLeague())}/> : null}
@@ -132,7 +132,7 @@ const LeagueHeader = () => {
 
                         <div id={'league-squad-tab' + (league.type == 'squad' ? ' active' : '')}></div>
                         <label htmlFor='league-squad-tab' className='league-tab'
-                               onClick={() => dispatch(changeLeagueType('squad'))}>Squads</label>
+                               onClick={() => dispatch(changeLeagueType('squad'))}>Clans</label>
                         <span className='league-tab-slider animate__slow'></span>
                     </div>
                 </div>
@@ -167,8 +167,7 @@ const LeagueHeader = () => {
                                                     fontSize: '14px',
                                                     width: '70vw',
                                                     textAlign: 'center'
-                                                }}>Ohhh!!! no one is here, but you can do it tap that thing and let them
-                                                    know.</p>
+                                                }}>It's lonely here...these Dragons are waiting to be minted. Will you and your clan make it?</p>
                                             </div> :
                                             <div className='flex flex-col items-center '>
                                                 <span style={{fontSize: '100px', height: '20vh'}}>🐲️</span>
@@ -205,8 +204,7 @@ const LeagueHeader = () => {
                                                 fontSize: '14px',
                                                 width: '70vw',
                                                 textAlign: 'center'
-                                            }}>Ohhh!!! no one is here, but you can do it tap that thing and let them
-                                                know.</p>
+                                            }}>It's lonely here...these Dragons are waiting to be minted. Will you and your clan make it?</p>
                                         </div> :
                                         <div className='flex flex-col items-center '>
                                             <span style={{fontSize: '100px', height: '20vh'}}>🐲️</span>

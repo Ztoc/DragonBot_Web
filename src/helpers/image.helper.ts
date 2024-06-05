@@ -1,90 +1,106 @@
-import BOOST_DRAGON from "../../public/icon/boosts/dragon.svg";
-import BOOST_BATTREY from "../../public/icon/boosts/battery.svg";
-import BOOST_ENERGY from "../../public/icon/boosts/energy.svg";
-import BOOST_MULTITAP from "../../public/icon/boosts/multi-tap.svg";
-import BOOST_RECHARGE from "../../public/icon/boosts/recharge-speed.svg";
-import BOOST_TAPBOT from "../../public/icon/boosts/tap-bot.svg";
+import BOOST_DRAGON from "/icon/boosts/dragon.png";
+import BOOST_BATTERY from "/icon/boosts/battery.png";
+import BOOST_ENERGY from "/icon/boosts/battery.png";
+import BOOST_MULTITAP from "/icon/boosts/multi-tap.png";
+import BOOST_RECHARGE from "/icon/boosts/recharge-speed.png";
+import BOOST_TAPBOT from "/icon/boosts/tap-bot.png";
 
-import BASIC from "../../public/icon/boosts/skin/defualt.svg";
-import BITCOIN from "../../public/icon/boosts/skin/bitcoin.svg";
-import VOTE_PEDRO from "../../public/icon/boosts/skin/vote.svg";
-import JADE_COIN from "../../public/icon/boosts/skin/jade-coin.svg";
+import BOOST_BATTERY_BIG from "/icon/boosts/big/battery.png";
+import BOOST_ENERGY_BIG from "/icon/boosts/big/energy.png";
+import BOOST_MULTITAP_BIG from "/icon/boosts/big/multi-tap.png";
+import BOOST_RECHARGE_BIG from "/icon/boosts/big/recharge-speed.png";
+import BOOST_TAPBOT_BIG from "/icon/boosts/big/tap-bot.png";
+import BOOST_DRAGON_BIG from "/icon/boosts/big/dragon.png";
 
-import BTC_IMAGE from "../../public/skin/BTC.png";
-import BTC_OPEN_IMAGE from "../../public/skin/BTC_open.png";
-import DRAGON_ICON_IMAGE from "../../public/skin/dragon-icon.png";
-import DRAGON_ICON_OPEN_IMAGE from "../../public/skin/dragon-icon_open.png";
-import JADE_IMAGE from "../../public/skin/Jade.png";
-import JADE_OPEN_IMAGE from "../../public/skin/Jade_open.png";
-import PIN_IMAGE from "../../public/skin/Pin.png";
-import PIN_OPEN_IMAGE from "../../public/skin/Pin_open.png";
+import BTC_IMAGE from "/skin/BTC.png";
+// import BTC_OPEN_IMAGE from "/skin/BTC.png";
+import DRAGON_ICON_IMAGE from "/skin/dragon-icon.png";
+// import DRAGON_ICON_OPEN_IMAGE from "/skin/dragon-icon.png";
+import JADE_IMAGE from "/skin/Jade.png";
+// import JADE_OPEN_IMAGE from "/skin/Jade.png";
+import PIN_IMAGE from "/skin/Pin.png";
+// import PIN_OPEN_IMAGE from "/skin/Pin.png";
 
-import TOY_TOOL_IMG from '../../public/icon/main/toy.svg';
-import COIN_TOOL_IMG from '../../public/icon/main/small-coin.svg';
-import COIN_SPACE_IMG from '../../public/icon/main/coin-space.svg';
-import DRAGON_TOOL_IMG from '../../public/icon/main/dragon.svg';
+import TOY_TOOL_IMG from '/icon/menu/frens.png';
+import COIN_TOOL_IMG from '/icon/menu/earn.png';
+import APPS_TOOL_IMG from '/icon/menu/apps.png';
+import DRAGON_TOOL_IMG from '/icon/menu/boost.png';
+import ENTER_BG_IMG from '/icon/enter/enter.png';
+import WELCOME_HEADER_IMG from '/icon/enter/header.png';
+import DRAGON_TAP_IMG from '/background/dashboard.jpg';
+import DRAGON_WAR_IMG from '/background/dragon-war.jpg';
+import DRAGON_LAUNCHPADS_IMG from '/background/dragon-launchpads.jpg';
+import DRAGON_MINT_IMG from '/background/dragon-mint.jpg';
+import DRAGON_CATCH_IMG from '/background/dragon-catch.jpg';
+import TWITTER_IMG from '/icon/defaults/twitter.png';
+import MEDIUM_IMG from '/icon/defaults/medium.png';
+import TELEGRAM_IMG from '/icon/defaults/telegram.png';
+import AUTO_EARN_BOT_IMG from '/icon/earn/auto-earn.png';
+import APP_BACKGROUND_IMG from '/background/bg.jpg';
+import TOY_EMPTY_IMG from '/icon/menu/frens_2x.png';
 
-import BRONZE_LEAGUE from '../../public/icon/rank/bronze.svg';
-import SILVER_LEAGUE from '../../public/icon/rank/silver.svg';
-import GOLD_LEAGUE from '../../public/icon/rank/gold.svg';
-import PLATINUM_LEAGUE from '../../public/icon/rank/platinum.svg';
-import EMERALD_LEAGUE from '../../public/icon/rank/emerald.svg';
-import RUBY_LEAGUE from '../../public/icon/rank/ruby.svg';
-import DIAMOND_LEAGUE from '../../public/icon/rank/diamond.svg';
-import LOONG_LEAGUE from '../../public/icon/rank/loong.svg';
+import BRONZE_LEAGUE from '/icon/rank/bronze.png';
+import SILVER_LEAGUE from '/icon/rank/silver.png';
+import GOLD_LEAGUE from '/icon/rank/gold.png';
+import PLATINUM_LEAGUE from '/icon/rank/platinum.png';
+import EMERALD_LEAGUE from '/icon/rank/emerald.png';
+import RUBY_LEAGUE from '/icon/rank/ruby.png';
+import DIAMOND_LEAGUE from '/icon/rank/diamond.png';
+import LOONG_LEAGUE from '/icon/rank/loong.png';
 
-import BRONZE_LEAGUE_SMALL from '../../public/icon/rank/small/bronze.svg';
-import SILVER_LEAGUE_SMALL from '../../public/icon/rank/small/silver.svg';
-import GOLD_LEAGUE_SMALL from '../../public/icon/rank/small/gold.svg';
-import PLATINUM_LEAGUE_SMALL from '../../public/icon/rank/small/platinum.svg';
-import EMERALD_LEAGUE_SMALL from '../../public/icon/rank/small/emerald.svg';
-import RUBY_LEAGUE_SMALL from '../../public/icon/rank/small/ruby.svg';
-import DIAMOND_LEAGUE_SMALL from '../../public/icon/rank/small/diamond.svg';
-import LOONG_LEAGUE_SMALL from '../../public/icon/rank/small/loong.svg';
+import BRONZE_LEAGUE_SMALL from '/icon/rank/small/bronze.png';
+import SILVER_LEAGUE_SMALL from '/icon/rank/small/bronze.png';
+import GOLD_LEAGUE_SMALL from '/icon/rank/small/bronze.png';
+import PLATINUM_LEAGUE_SMALL from '/icon/rank/small/bronze.png';
+import EMERALD_LEAGUE_SMALL from '/icon/rank/small/bronze.png';
+import RUBY_LEAGUE_SMALL from '/icon/rank/small/bronze.png';
+import DIAMOND_LEAGUE_SMALL from '/icon/rank/small/bronze.png';
+import LOONG_LEAGUE_SMALL from '/icon/rank/small/bronze.png';
 
-import BRONZE_LEAGUE_BG from '../../public/background/skin/bronze.svg';
-import SILVER_LEAGUE_BG from '../../public/background/skin/silver.svg';
-import GOLD_LEAGUE_BG from '../../public/background/skin/gold.svg';
-import PLATINUM_LEAGUE_BG from '../../public/background/skin/platinum.svg';
-import EMERALD_LEAGUE_BG from '../../public/background/skin/emerald.svg';
-import RUBY_LEAGUE_BG from '../../public/background/skin/ruby.svg';
-import DIAMOND_LEAGUE_BG from '../../public/background/skin/diamond.svg';
-import LOONG_LEAGUE_BG from '../../public/background/skin/loong.svg';
+import BRONZE_LEAGUE_BG from '/background/skin/bronze.svg';
+import SILVER_LEAGUE_BG from '/background/skin/silver.svg';
+import GOLD_LEAGUE_BG from '/background/skin/gold.svg';
+import PLATINUM_LEAGUE_BG from '/background/skin/platinum.svg';
+import EMERALD_LEAGUE_BG from '/background/skin/emerald.svg';
+import RUBY_LEAGUE_BG from '/background/skin/ruby.svg';
+import DIAMOND_LEAGUE_BG from '/background/skin/diamond.svg';
+import LOONG_LEAGUE_BG from '/background/skin/loong.svg';
 
-import A from '../../public/users-img/1.jpg';
-import B from '../../public/users-img/2.jpg';
-import C from '../../public/users-img/3.jpg';
-import D from '../../public/users-img/4.jpg';
-import E from '../../public/users-img/5.jpg';
-import F from '../../public/users-img/6.jpg';
-import G from '../../public/users-img/7.jpg';
-import H from '../../public/users-img/8.jpg';
-import I from '../../public/users-img/9.jpg';
-import J from '../../public/users-img/10.jpg';
-import K from '../../public/users-img/11.jpg';
-import L from '../../public/users-img/12.jpg';
-import M from '../../public/users-img/13.jpg';
-import N from '../../public/users-img/14.jpg';
-import O from '../../public/users-img/15.jpg';
+import A from '/users-img/1.jpg';
+import B from '/users-img/2.jpg';
+import C from '/users-img/3.jpg';
+import D from '/users-img/4.jpg';
+import E from '/users-img/5.jpg';
+import F from '/users-img/6.jpg';
+import G from '/users-img/7.jpg';
+import H from '/users-img/8.jpg';
+import I from '/users-img/9.jpg';
+import J from '/users-img/10.jpg';
+import K from '/users-img/11.jpg';
+import L from '/users-img/12.jpg';
+import M from '/users-img/13.jpg';
+import N from '/users-img/14.jpg';
+import O from '/users-img/15.jpg';
 
-import JOIN_SQUAD_BG from '../../public/background/squad/Squad_BG.svg';
-import TOP_FRENS_BG from '../../public/background/fren/topfren_BG.svg';
-import SQUAD_DETAIL_BG from '../../public/background/squad/Squad_Detail_BG.svg'
-import OPEN_ARROW from "../../public/icon/defaults/open-arrow.svg";
-import LEFT_ARROW from "../../public/icon/defaults/left-arrow.svg";
-import RIGHT_ARROW from "../../public/icon/defaults/right-arrow.svg";
-import TG_PREMIUM from '../../public/icon/tg_premium.svg';
-import FIRST_BADGE from '../../public/icon/rank/top/one.svg';
-import SECOND_BADGE from '../../public/icon/rank/top/two.svg';
-import THIRD_BADGE from '../../public/icon/rank/top/three.svg';
-import CHECK_ICON from "../../public/icon/defaults/right-arrow.svg";
-import CLOSE_ICON from "../../public/icon/defaults/close.svg";
-import LOCKED_ICON from "../../public/icon/boosts/locked.svg";
-import CELEBRATION_ICON from "../../public/icon/squad/celebration.svg";
+import JOIN_SQUAD_BG from '/background/squad/Squad_BG.svg';
+import TOP_FRENS_BG from '/background/fren/topfren_BG.svg';
+import SQUAD_DETAIL_BG from '/background/squad/Squad_Detail_BG.svg'
+import OPEN_ARROW from "/icon/defaults/open-arrow.svg";
+import LEFT_ARROW from "/icon/defaults/left-arrow.svg";
+import RIGHT_ARROW from "/icon/defaults/right-arrow.svg";
+import TG_PREMIUM from '/icon/tg_premium.svg';
+import FIRST_BADGE from '/icon/rank/top/one.svg';
+import SECOND_BADGE from '/icon/rank/top/two.svg';
+import THIRD_BADGE from '/icon/rank/top/three.svg';
+import CHECK_ICON from "/icon/defaults/right-arrow.svg";
+import CLOSE_ICON from "/icon/defaults/close.svg";
+import LOCKED_ICON from "/icon/boosts/locked.svg";
+import CELEBRATION_ICON from "/icon/squad/celebration.svg";
+import COIN_ICON from "/icon/coin.png";
 
 import {addCoinLoadedImg} from "../store/loading.ts";
 import {store} from "../store/store.ts";
-import {LeagueImageTypes, SkinImageTypes} from "../types/data.ts";
+import {BoosterImageTypes, DailyBoosterImageTypes, LeagueImageTypes, SkinImageTypes} from "../types/data.ts";
 import {
     addActiveSkinsImages,
     addBoosterImages, addCoinersImages,
@@ -124,7 +140,7 @@ import {
 //         case 'AUTO_TAP_BOT':
 //             return BOOST_TAPBOT;
 //         case 'ENERGY_LIMIT':
-//             return BOOST_BATTREY;
+//             return BOOST_BATTERY;
 //         case 'ENERGY':
 //             return BOOST_ENERGY;
 //         case 'BASIC':
@@ -139,73 +155,56 @@ import {
 //             return BOOST_DRAGON;
 //     }
 // }
-const loadCoinImages = (coin: 'BASIC' | 'BITCOIN' | 'JADE_COIN' | 'VOTE_PEDRO') => {
-    const loadImages = [
-        {name: 'BITCOIN_NORMAL', preset: 'BITCOIN', src: BTC_IMAGE, type: 'normal'},
-        {name: 'BITCOIN_TURBO', preset: 'BITCOIN', src: BTC_OPEN_IMAGE, type: 'turbo'},
-        {name: 'BASIC_NORMAL', preset: 'BASIC', src: DRAGON_ICON_IMAGE, type: 'normal'},
-        {name: 'BASIC_TURBO', preset: 'BASIC', src: DRAGON_ICON_OPEN_IMAGE, type: 'turbo'},
-        {name: 'JADE_COIN_NORMAL', preset: 'JADE_COIN', src: JADE_IMAGE, type: 'normal'},
-        {name: 'JADE_COIN_TURBO', preset: 'JADE_COIN', src: JADE_OPEN_IMAGE, type: 'turbo'},
-        {name: 'VOTE_PEDRO_NORMAL', preset: 'VOTE_PEDRO', src: PIN_IMAGE, type: 'normal'},
-        {name: 'VOTE_PEDRO_TURBO', preset: 'VOTE_PEDRO', src: PIN_OPEN_IMAGE, type: 'turbo'},
-    ];
-    const images = loadImages.filter((img) => img.preset === coin);
-    images.forEach((img) => {
-        const im = new Image()
-        im.onload = () => addCoinLoadedImg(img.name)
-        im.src = img.src
-    })
-}
 export const loadBoostImages = () => {
     const loadImages = [
-        {name: 'RECHARGING_SPEED', src: [{type: 'normal', img: BOOST_RECHARGE}], type: 'booster'},
-        {name: 'MULTI_TAP', src: [{type: 'normal', img: BOOST_MULTITAP}], type: 'booster'},
-        {name: 'AUTO_TAP_BOT', src: [{type: 'normal', img: BOOST_TAPBOT}], type: 'booster'},
-        {name: 'ENERGY_LIMIT', src: [{type: 'normal', img: BOOST_BATTREY}], type: 'booster'},
-        {name: 'ENERGY', src: [{type: 'normal', img: BOOST_ENERGY}], type: 'dailyBooster'},
-        {name: 'TURBO', src: [{type: 'normal', img: BOOST_DRAGON}], type: 'dailyBooster'},
+        {name: 'RECHARGING_SPEED', src: [{type: 'small', img: BOOST_RECHARGE}, {type: 'big', img: BOOST_RECHARGE_BIG}], type: 'booster'},
+        {name: 'MULTI_TAP', src: [{type: 'small', img: BOOST_MULTITAP}, {type: 'big', img: BOOST_MULTITAP_BIG}], type: 'booster'},
+        {name: 'AUTO_TAP_BOT', src: [{type: 'small', img: BOOST_TAPBOT}, {type: 'big', img: BOOST_TAPBOT_BIG}], type: 'booster'},
+        {name: 'ENERGY_LIMIT', src: [{type: 'small', img: BOOST_BATTERY}, {type: 'big', img: BOOST_BATTERY_BIG}], type: 'booster'},
+        {name: 'ENERGY', src: [{type: 'small', img: BOOST_ENERGY}, {type: 'big', img: BOOST_ENERGY_BIG}], type: 'dailyBooster'},
+        {name: 'TURBO', src: [{type: 'small', img: BOOST_DRAGON}, {type: 'big', img: BOOST_DRAGON_BIG}], type: 'dailyBooster'},
 
         {
             name: 'BASIC',
-            src: [{type: 'normal', img: DRAGON_ICON_IMAGE}, {type: 'turbo', img: DRAGON_ICON_OPEN_IMAGE}],
+            src: [{type: 'normal', img: DRAGON_ICON_IMAGE}],
             type: 'skin'
         },
         {
             name: 'BITCOIN',
-            src: [{type: 'normal', img: BTC_IMAGE}, {type: 'turbo', img: BTC_OPEN_IMAGE}],
+            src: [{type: 'normal', img: BTC_IMAGE}],
             type: 'skin'
         },
         {
             name: 'VOTE_PEDRO',
-            src: [{type: 'normal', img: PIN_IMAGE}, {type: 'turbo', img: PIN_OPEN_IMAGE}],
+            src: [{type: 'normal', img: PIN_IMAGE}],
             type: 'skin'
         },
         {
             name: 'JADE_COIN',
-            src: [{type: 'normal', img: JADE_IMAGE}, {type: 'turbo', img: JADE_OPEN_IMAGE}],
+            src: [{type: 'normal', img: JADE_IMAGE}],
             type: 'skin'
         },
-        {name: 'COIN_SPACE', src: [{type: 'normal', img: COIN_SPACE_IMG}], type: 'others'},
 
     ];
     return loadImages.forEach((img) => {
-        img.src.forEach((image: { type: 'normal' | 'turbo', img: any }) => {
+        img.src.forEach((image: { type: 'normal' | 'turbo' | 'small' | 'big', img: any }) => {
             const im = new Image()
             im.src = image.img
             im.onload = () => {
                 if (img.type == 'booster') {
                     store.dispatch(addBoosterImages({
-                        name: img.name,
-                        img: im
+                        name: img.name as BoosterImageTypes,
+                        img: im,
+                        type: image.type as 'small' | 'big'
                     }))
                     if (store.getState().image.booster.filter((x) => x.name === 'RECHARGING_SPEED' || x.name === 'MULTI_TAP' || x.name == 'AUTO_TAP_BOT' || x.name == 'ENERGY_LIMIT').length >= 4) {
                         store.dispatch(setBoosterDone(true))
                     }
                 } else if (img.type == 'dailyBooster') {
                     store.dispatch(addDailyBoosterImages({
-                        name: img.name,
-                        img: im
+                        name: img.name as DailyBoosterImageTypes,
+                        img: im,
+                        type: image.type as 'small' | 'big'
                     }))
                     if (store.getState().image.dailyBooster.filter((x) => x.name === 'TURBO' || x.name === 'ENERGY').length >= 2) {
                         store.dispatch(setDailyBoosterDone(true))
@@ -214,7 +213,7 @@ export const loadBoostImages = () => {
                     store.dispatch(addSkinImages({
                         name: img.name as SkinImageTypes,
                         img: im,
-                        type: image.type
+                        type: image.type as 'normal' | 'turbo'
                     }))
                     if (store.getState().image.skin.filter((x) => x.name === 'BASIC' || x.name === 'BITCOIN' || x.name == 'VOTE_PEDRO' || x.name == 'JADE_COIN').length >= 4) {
                         store.dispatch(setSkinDone(true))
@@ -224,7 +223,7 @@ export const loadBoostImages = () => {
                         name: img.name,
                         img: im
                     }))
-                    if (store.getState().image.others.filter((x) => 'COIN_SPACE').length >= 1) {
+                    if (store.getState().image.others.filter((x) => 'COIN_SPACE').length >= 0) {
                         store.dispatch(setOthersDone(true))
                     }
                 }
@@ -235,28 +234,23 @@ export const loadBoostImages = () => {
 export const loadCoinSkinImages = () => {
     const loadImages = [
         {name: 'BITCOIN_NORMAL', preset: 'BITCOIN', src: BTC_IMAGE, type: 'normal'},
-        {name: 'BITCOIN_TURBO', preset: 'BITCOIN', src: BTC_OPEN_IMAGE, type: 'turbo'},
+        // {name: 'BITCOIN_TURBO', preset: 'BITCOIN', src: BTC_OPEN_IMAGE, type: 'turbo'},
         {name: 'BASIC_NORMAL', preset: 'BASIC', src: DRAGON_ICON_IMAGE, type: 'normal'},
-        {name: 'BASIC_TURBO', preset: 'BASIC', src: DRAGON_ICON_OPEN_IMAGE, type: 'turbo'},
+        // {name: 'BASIC_TURBO', preset: 'BASIC', src: DRAGON_ICON_OPEN_IMAGE, type: 'turbo'},
         {name: 'JADE_COIN_NORMAL', preset: 'JADE_COIN', src: JADE_IMAGE, type: 'normal'},
-        {name: 'JADE_COIN_TURBO', preset: 'JADE_COIN', src: JADE_OPEN_IMAGE, type: 'turbo'},
+        // {name: 'JADE_COIN_TURBO', preset: 'JADE_COIN', src: JADE_OPEN_IMAGE, type: 'turbo'},
         {name: 'VOTE_PEDRO_NORMAL', preset: 'VOTE_PEDRO', src: PIN_IMAGE, type: 'normal'},
-        {name: 'VOTE_PEDRO_TURBO', preset: 'VOTE_PEDRO', src: PIN_OPEN_IMAGE, type: 'turbo'},
+        // {name: 'VOTE_PEDRO_TURBO', preset: 'VOTE_PEDRO', src: PIN_OPEN_IMAGE, type: 'turbo'},
     ];
-    switch (store.getState().user.data.skin) {
+    switch (store.getState().user.data?.skin) {
         case 'BASIC':
             const normal_image = new Image();
             normal_image.src = DRAGON_ICON_IMAGE;
-            const turbo_image = new Image();
             normal_image.onload = () => {
-                turbo_image.src = DRAGON_ICON_OPEN_IMAGE;
-            }
-            turbo_image.onload = () => {
                 store.dispatch(addActiveSkinsImages({
-                    name: loadImages.find((x) => x.preset === store.getState().user.data.skin).name,
+                    name: loadImages.find((x) => x.preset === store.getState().user.data?.skin).name,
                     img: {
                         normal: normal_image,
-                        turbo: turbo_image
                     }
                 }))
                 store.dispatch(setActiveSkinsDone(true))
@@ -265,16 +259,11 @@ export const loadCoinSkinImages = () => {
         case 'BITCOIN':
             const normal_image1 = new Image();
             normal_image1.src = BTC_IMAGE;
-            const turbo_image1 = new Image();
             normal_image1.onload = () => {
-                turbo_image1.src = BTC_OPEN_IMAGE;
-            }
-            turbo_image1.onload = () => {
                 store.dispatch(addActiveSkinsImages({
-                    name: loadImages.find((x) => x.preset === store.getState().user.data.skin).name,
+                    name: loadImages.find((x) => x.preset === store.getState().user.data?.skin).name,
                     img: {
                         normal: normal_image1,
-                        turbo: turbo_image1
                     }
                 }))
                 store.dispatch(setActiveSkinsDone(true))
@@ -283,16 +272,11 @@ export const loadCoinSkinImages = () => {
         case 'VOTE_PEDRO':
             const normal_image2 = new Image();
             normal_image2.src = PIN_IMAGE;
-            const turbo_image2 = new Image();
             normal_image2.onload = () => {
-                turbo_image2.src = PIN_OPEN_IMAGE;
-            }
-            turbo_image2.onload = () => {
                 store.dispatch(addActiveSkinsImages({
-                    name: loadImages.find((x) => x.preset === store.getState().user.data.skin).name,
+                    name: loadImages.find((x) => x.preset === store.getState().user.data?.skin).name,
                     img: {
                         normal: normal_image2,
-                        turbo: turbo_image2
                     }
                 }))
                 store.dispatch(setActiveSkinsDone(true))
@@ -301,16 +285,11 @@ export const loadCoinSkinImages = () => {
         case 'JADE_COIN':
             const normal_image3 = new Image();
             normal_image3.src = JADE_IMAGE;
-            const turbo_image3 = new Image();
             normal_image3.onload = () => {
-                turbo_image3.src = JADE_OPEN_IMAGE;
-            }
-            turbo_image3.onload = () => {
                 store.dispatch(addActiveSkinsImages({
-                    name: loadImages.find((x) => x.preset === store.getState().user.data.skin).name,
+                    name: loadImages.find((x) => x.preset === store.getState().user.data?.skin).name,
                     img: {
                         normal: normal_image3,
-                        turbo: turbo_image3
                     }
                 }))
                 store.dispatch(setActiveSkinsDone(true))
@@ -319,16 +298,11 @@ export const loadCoinSkinImages = () => {
         default:
             const normal_image4 = new Image();
             normal_image4.src = DRAGON_ICON_IMAGE;
-            const turbo_image4 = new Image();
             normal_image4.onload = () => {
-                turbo_image4.src = DRAGON_ICON_OPEN_IMAGE;
-            }
-            turbo_image4.onload = () => {
                 store.dispatch(addActiveSkinsImages({
-                    name: loadImages.find((x) => x.preset === store.getState().user.data.skin).name,
+                    name: loadImages.find((x) => x.preset === store.getState().user.data?.skin).name,
                     img: {
                         normal: normal_image4,
-                        turbo: turbo_image4
                     }
                 }))
                 store.dispatch(setActiveSkinsDone(true))
@@ -339,8 +313,24 @@ export const loadCoinSkinImages = () => {
 export const loadCoreImages = () => {
     const loadImages = [
         {name: 'TOY_TOOL', src: TOY_TOOL_IMG},
+        {name: 'TOY_EMPTY', src: TOY_EMPTY_IMG},
         {name: 'COIN_TOOL', src: COIN_TOOL_IMG},
+        {name: 'APPS_TOOL', src: APPS_TOOL_IMG},
         {name: 'DRAGON_TOOL', src: DRAGON_TOOL_IMG},
+        {name: 'COIN_ICON', src: COIN_ICON},
+        {name: 'CLOSE_ICON', src: CLOSE_ICON},
+        {name: 'ENTER_BG', src: ENTER_BG_IMG},
+        {name: 'WELCOME_HEADER', src: WELCOME_HEADER_IMG},
+        {name: 'DRAGON_TAP', src: DRAGON_TAP_IMG},
+        {name: 'DRAGON_WAR', src: DRAGON_WAR_IMG},
+        {name: 'DRAGON_LAUNCHPADS', src: DRAGON_LAUNCHPADS_IMG},
+        {name: 'DRAGON_MINT', src: DRAGON_MINT_IMG},
+        {name: 'DRAGON_CATCH', src: DRAGON_CATCH_IMG},
+        {name: 'TWITTER', src: TWITTER_IMG},
+        {name: 'MEDIUM', src: MEDIUM_IMG},
+        {name: 'TELEGRAM', src: TELEGRAM_IMG},
+        {name: 'AUTO_EARN_BOT', src: AUTO_EARN_BOT_IMG},
+        {name: 'APP_BACKGROUND',src: APP_BACKGROUND_IMG}
     ];
     return loadImages.forEach((img) => {
         const im = new Image()
@@ -350,7 +340,7 @@ export const loadCoreImages = () => {
                 name: img.name,
                 img: im
             }))
-            if (store.getState().image.core.filter((x) => x.name === 'TOY_TOOL' || x.name === 'COIN_TOOL' || x.name === 'DRAGON_TOOL').length >= 3) {
+            if (store.getState().image.core.filter((x) => x.name === 'TOY_TOOL' || x.name === 'COIN_TOOL' || x.name === 'DRAGON_TOOL' || x.name == 'APPS_TOOL' || x.name == 'COIN_ICON' || x.name == 'CLOSE_ICON' || x.name == 'ENTER_BG' || x.name == 'WELCOME_HEADER' || x.name == 'DRAGON_TAP' || x.name == 'DRAGON_WAR' || x.name == 'DRAGON_LAUNCHPADS' || x.name == 'DRAGON_MINT' || x.name == 'DRAGON_CATCH' || x.name == 'TWITTER' || x.name == 'MEDIUM' || x.name == 'TELEGRAM' || x.name == 'AUTO_EARN_BOT' || x.name == 'APP_BACKGROUND').length >= 18) {
                 store.dispatch(setCoreDone(true))
             }
         }
@@ -426,7 +416,6 @@ export const loadCoinersImages = () => {
         }
     })
 }
-
 export const loadOptionalImages = () => {
     const loadImages = [
         {name: 'JOIN_SQUAD_BG', src: JOIN_SQUAD_BG},
@@ -440,7 +429,6 @@ export const loadOptionalImages = () => {
         {name: 'SECOND_BADGE', src: SECOND_BADGE},
         {name: 'THIRD_BADGE', src: THIRD_BADGE},
         {name: 'CHECK_ICON', src: CHECK_ICON},
-        {name: 'CLOSE_ICON', src: CLOSE_ICON},
         {name: 'LOCKED_ICON', src: LOCKED_ICON},
         {name: 'CELEBRATION_ICON', src: CELEBRATION_ICON}
     ];
@@ -452,7 +440,7 @@ export const loadOptionalImages = () => {
                 name: img.name,
                 img: im
             }))
-            if (store.getState().image.optional.filter((x) => x.name == 'JOIN_SQUAD_BG' || x.name == 'TOP_FRENS_BG' || x.name == 'SQUAD_DETAIL_BG' || x.name == 'OPEN_ARROW' || x.name == 'LEFT_ARROW' || x.name == 'RIGHT_ARROW' || x.name == 'TG_PREMIUM' || x.name == 'FIRST_BADGE' || x.name == 'SECOND_BADGE' || x.name == 'THIRD_BADGE' || x.name == 'CHECK_ICON' || x.name == 'CLOSE_ICON' || x.name == 'LOCKED_ICON' || x.name == 'CELEBRATION_ICON').length >= 14) {
+            if (store.getState().image.optional.filter((x) => x.name == 'JOIN_SQUAD_BG' || x.name == 'TOP_FRENS_BG' || x.name == 'SQUAD_DETAIL_BG' || x.name == 'OPEN_ARROW' || x.name == 'LEFT_ARROW' || x.name == 'RIGHT_ARROW' || x.name == 'TG_PREMIUM' || x.name == 'FIRST_BADGE' || x.name == 'SECOND_BADGE' || x.name == 'THIRD_BADGE' || x.name == 'CHECK_ICON' || x.name == 'LOCKED_ICON' || x.name == 'CELEBRATION_ICON').length >= 13) {
                 store.dispatch(setOptionalDone(true))
             }
         }
