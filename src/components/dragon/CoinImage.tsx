@@ -10,7 +10,6 @@ import {
   setTapTimeout,
 } from "../../store/score.ts";
 import React from "react";
-import { loadCoin } from "../../store/loading.ts";
 import { tapValue } from "../../helpers/score.helper.ts";
 import { ImageSliceType, ScoreSliceType, TurboSliceType, UserSliceType } from "../../types/store.ts";
 import { incrementTurboTaps, resetTurboTaps, turboModeOff } from "../../store/turbo.ts";
@@ -19,10 +18,11 @@ const CoinImage = ({ isTurbo = false }) => {
   const imgH = React.useRef<HTMLDivElement>(null);
   const img = React.useRef<HTMLImageElement>(null);
   const user: UserSliceType = useSelector((state: any) => state.user);
+  const round = useSelector((state: any) => state.dragonwar.round);
   const score: ScoreSliceType = useSelector((state: any) => state.score);
   const turbo: TurboSliceType = useSelector((state: any) => state.turbo);
   const image: ImageSliceType = useSelector((state: any) => state.image);
-  const normal_image = image.activeSkins.img == undefined ? "" : image.activeSkins.img.normal.src;
+  const POT_IMG = image.dragon.find((img) => img.name === `POT${round}`);
   // const turbo_image = image.activeSkins.img == undefined ? '' : image.activeSkins.img.turbo.src;
   const dispatch = useDispatch();
   const TapTap = () => {
@@ -135,7 +135,7 @@ const CoinImage = ({ isTurbo = false }) => {
           ref={img}
           id="coinIcon"
           className={"coin-image" + (isTurbo ? " turbo-coin" : "")}
-          src={normal_image}
+          src={POT_IMG?.img.src}
           alt="DragonCoin"
         />
       </div>
@@ -149,7 +149,7 @@ const CoinImage = ({ isTurbo = false }) => {
           ref={img}
           id="coinIcon"
           className="coin-image grayscale-image glitch-animation"
-          src={normal_image}
+          src={POT_IMG?.img.src}
           alt="DragonCoin"
         />
       </div>
