@@ -15,7 +15,7 @@ import { tapValue } from "../../helpers/score.helper.ts";
 import { ImageSliceType, ScoreSliceType, TurboSliceType, UserSliceType } from "../../types/store.ts";
 import { incrementTurboTaps, resetTurboTaps, turboModeOff } from "../../store/turbo.ts";
 
-const CoinImage = ({ isTurbo = false }) => {
+const CoinImage5 = ({ isTurbo = false }) => {
   const imgH = React.useRef<HTMLDivElement>(null);
   const img = React.useRef<HTMLImageElement>(null);
   const user: UserSliceType = useSelector((state: any) => state.user);
@@ -135,8 +135,9 @@ const CoinImage = ({ isTurbo = false }) => {
           ref={img}
           id="coinIcon"
           className={"coin-image" + (isTurbo ? " turbo-coin" : "")}
-          src={normal_image}
+          src={"/icon/pot3.png"}
           alt="DragonCoin"
+          style={{ opacity: 0.12 }}
         />
       </div>
       <div></div>
@@ -149,8 +150,9 @@ const CoinImage = ({ isTurbo = false }) => {
           ref={img}
           id="coinIcon"
           className="coin-image grayscale-image glitch-animation"
-          src={normal_image}
+          src={"/icon/pot3.png"}
           alt="DragonCoin"
+          style={{ opacity: 0.12 }}
         />
       </div>
       <div></div>
@@ -158,4 +160,4 @@ const CoinImage = ({ isTurbo = false }) => {
   );
 };
 
-export default CoinImage;
+export default CoinImage5;
