@@ -105,10 +105,10 @@ import GOLD_MEDAL from "/icon/medals/gold.png";
 import SILVER_LARGE_MEDAL from "/icon/medals/silver-large.svg";
 import SILVER_EXTRALARGE_MEDAL from "/icon/medals/silver-extralarge.svg";
 
-import POT from "/icon/pot.png";
-import POT3 from "/icon/pot3.png";
-import POT4 from "/icon/pot4.png";
-import CUP from "/icon/cup.png";
+import POT from "/icon/dragonwar/pot.png";
+import POT3 from "/icon/dragonwar/pot3.png";
+import POT4 from "/icon/dragonwar/pot4.png";
+import CUP from "/icon/dragonwar/cup.png";
 
 import OPTION_ICON from "/icon/defaults/option.png";
 import HISTORY_ICON from "/icon/defaults/history.png";
@@ -119,7 +119,7 @@ import DRAGON4 from "/icon/dragon/dragon4.png";
 import DRAGON5 from "/icon/dragon/dragon5.png";
 import DRAGON6 from "/icon/dragon/dragon6.png";
 
-import TON_ICON from "/icon/ton.png";
+import TON_ICON from "/icon/dragonwar/ton.png";
 
 import { addCoinLoadedImg } from "../store/loading.ts";
 import { store } from "../store/store.ts";
