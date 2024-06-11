@@ -5,6 +5,7 @@ const dragonwar = createSlice({
   initialState: {
     isConfirm: false,
     round: 1,
+    remainSec: 20,
   } as dragonwarSliceType,
   reducers: {
     setConfirm: (state, action) => {
@@ -14,8 +15,11 @@ const dragonwar = createSlice({
     setRound: (state, action) => {
       state.round = action.payload;
     },
+    setRemainSec: (state, action) => {
+      state.remainSec = action.payload;
+    },
   },
 });
 
-export const { setConfirm, setRound } = dragonwar.actions;
+export const { setConfirm, setRound, setRemainSec } = dragonwar.actions;
 export default dragonwar.reducer;
