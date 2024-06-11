@@ -188,4 +188,5 @@ export type dragonwarSliceType = {
   isConfirm: boolean;
   currentTime: number;
   round: number;
+  remainSec: number;
 };

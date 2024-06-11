@@ -23,6 +23,7 @@ const CoinImage5 = ({ isTurbo = false }) => {
   const turbo: TurboSliceType = useSelector((state: any) => state.turbo);
   const image: ImageSliceType = useSelector((state: any) => state.image);
   const normal_image = image.activeSkins.img == undefined ? "" : image.activeSkins.img.normal.src;
+  const POT_IMG = image.dragon.find((img) => img.name === `POT3`);
   // const turbo_image = image.activeSkins.img == undefined ? '' : image.activeSkins.img.turbo.src;
   const dispatch = useDispatch();
   const TapTap = () => {
@@ -135,7 +136,7 @@ const CoinImage5 = ({ isTurbo = false }) => {
           ref={img}
           id="coinIcon"
           className={"coin-image" + (isTurbo ? " turbo-coin" : "")}
-          src={"/icon/pot3.png"}
+          src={POT_IMG?.img.src}
           alt="DragonCoin"
           style={{ opacity: 0.12 }}
         />
@@ -150,7 +151,7 @@ const CoinImage5 = ({ isTurbo = false }) => {
           ref={img}
           id="coinIcon"
           className="coin-image grayscale-image glitch-animation"
-          src={"/icon/pot3.png"}
+          src={POT_IMG?.img.src}
           alt="DragonCoin"
           style={{ opacity: 0.12 }}
         />

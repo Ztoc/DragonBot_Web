@@ -9,9 +9,15 @@ import { setConfirm } from "../../store/dragonwar";
 import { ImageSliceType } from "../../types/store";
 
 import "../../dragon.css";
+import { useNavigate } from "react-router-dom";
 
 const DragonWar = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const toHistory = () => {
+    navigate("/dragon-war/history");
+  };
 
   const image: ImageSliceType = useSelector((state: any) => state.image);
   const Bronze_medal = image.dragon.find((img) => img.name === "BRONZE_MEDAL");
@@ -27,7 +33,7 @@ const DragonWar = () => {
         <ToolWrapper />
         <div className="history-wrapper">
           <h3>Dragon Pot</h3>
-          <img src={HISTORY_ICON?.img.src} alt="history" width={24} height={24} />
+          <img src={HISTORY_ICON?.img.src} alt="history" width={24} height={24} onClick={toHistory} />
         </div>
         <div className="medal-group">
           <div className="medal-item blur-round-border-bg">
@@ -45,9 +51,7 @@ const DragonWar = () => {
         </div>
         <div className="wait-time">
           <p>Starts in</p>
-          <h2>
-            <CountdownTimer initialSeconds={300} />
-          </h2>
+          <CountdownTimer initialSeconds={100} />
         </div>
         <div className="round-description blur-dragon-round">
           <div>

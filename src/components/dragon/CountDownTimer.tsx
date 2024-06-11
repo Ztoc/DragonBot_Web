@@ -23,7 +23,7 @@ const CountdownTimer = ({ initialSeconds }) => {
     return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
   };
 
-  return <> {formatTime(seconds)}</>;
+  return <h2 style={{ color: seconds < 10 ? "red" : "" }}> {formatTime(seconds)}</h2>;
 };
 
 export default CountdownTimer;
