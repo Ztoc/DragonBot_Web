@@ -1,15 +1,17 @@
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 import ConfirmDrawer from "../../components/dragon/ConfirmDrawer";
 import MedalSelections from "../../components/dragon/MedalSelections";
 import CountdownTimer from "../../components/dragon/CountDownTimer";
 import ToolWrapper from "../../components/dragon/ToolWrapper";
 
-import { setConfirm } from "../../store/dragonwar";
+import { setConfirm, setRemainSec } from "../../store/dragonwar";
 import { ImageSliceType } from "../../types/store";
 
 import "../../dragon.css";
-import { useNavigate } from "react-router-dom";
+
+const rounds = ["Bronze", "", "Silver", "Gold"];
 
 const DragonWar = () => {
   const dispatch = useDispatch();
@@ -18,6 +20,13 @@ const DragonWar = () => {
   const toHistory = () => {
     navigate("/dragon-war/history");
   };
+
+  const dragonwar = useSelector((state: any) => state.dragonwar);
+  const tickets = dragonwar.tickets;
+  const round = dragonwar.round;
+  const duration = dragonwar.duration;
+  const participants = dragonwar.participants;
+  const seconds = dragonwar.remainSec;
 
   const image: ImageSliceType = useSelector((state: any) => state.image);
   const Bronze_medal = image.dragon.find((img) => img.name === "BRONZE_MEDAL");
@@ -37,36 +46,37 @@ const DragonWar = () => {
         </div>
         <div className="medal-group">
           <div className="medal-item blur-round-border-bg">
-            <img src={Bronze_medal?.img.src} className="medal" alt="" />
-            <div className="count">0</div>
+            <img src={Bronze_medal?.img.src} className="medal" alt="bronze" />
+            <div className="count">{tickets?.bronze}</div>
           </div>
           <div className="medal-item blur-round-border-bg">
-            <img src={Silver_medal?.img.src} className="medal" alt="" />
-            <div className="count">0</div>
+            <img src={Silver_medal?.img.src} className="medal" alt="silver" />
+            <div className="count">{tickets?.silver}</div>
           </div>
           <div className="medal-item blur-round-border-bg">
-            <img src={Gold_medal?.img.src} className="medal" alt="" />
-            <div className="count">0</div>
+            <img src={Gold_medal?.img.src} className="medal" alt="gold" />
+            <div className="count">{tickets?.gold}</div>
           </div>
         </div>
         <div className="wait-time">
           <p>Starts in</p>
-          <CountdownTimer initialSeconds={100} />
+          <h2 style={{ color: seconds < 10 ? "red" : "" }}>
+            <CountdownTimer seconds={seconds} setSeconds={setRemainSec} />
+          </h2>
         </div>
         <div className="round-description blur-dragon-round">
-          <div>
-            <h2>Silver Round</h2>
-            <p>Duration:5 minutes</p>
-            <p>Participants: 3000/10000</p>
+          <div style={{ display: "flex", flexDirection: "column", rowGap: "4px" }}>
+            <h2>{rounds[round - 1]} Round</h2>
+            <p>Duration:{duration / 60} minutes</p>
+            <p>Participants: {participants}/10000</p>
           </div>
-          <img src={Silver_large?.img.src} width={90} height={160} alt="" />
+          <img src={Silver_large?.img.src} width={90} height={160} alt="medal" />
         </div>
         <div className="enter-btn-wrapper">
           <button
             className="btn-primary"
             onClick={(e) => {
               dispatch(setConfirm(true));
-              console.log("isConfrim");
             }}
           >
             Enter

@@ -76,7 +76,7 @@
   font-size: 18px;
   line-height: 15.55px;
   position: absolute;
-  right: 35%;
+  right: 25%;
   top: 30%;
 }
 .wait-time {
@@ -129,16 +129,6 @@
 .enter-btn-wrapper {
   margin-top: 24px;
   z-index: 20;
-}
-.btn-primary {
-  background: linear-gradient(88.09deg, #e3452d 0%, #faaf5e 96.78%);
-  border-radius: 32px;
-  padding: 24px;
-  cursor: pointer;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 600;
-  width: 100%;
 }
 
 .medal-select {
@@ -575,4 +565,15 @@
   width: 100%;
   padding: 24px;
   background: linear-gradient(#00000026, #2a1414c2);
+}
+
+.btn-primary {
+  background: linear-gradient(88.09deg, #e3452d 0%, #faaf5e 96.78%);
+  border-radius: 32px;
+  padding: 24px;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  width: 100%;
 }

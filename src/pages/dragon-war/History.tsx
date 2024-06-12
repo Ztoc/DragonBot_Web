@@ -18,7 +18,7 @@ const History = () => {
           <div className="history-item blur-round-border-bg">
             <div className="history-description">
               <div className="reward-title">
-                <img src={TON_ICON?.img.src} width={41} height={41} alt="" />
+                <img src={TON_ICON?.img.src} width={41} height={41} alt="TON" />
                 <div className="reward-amount">
                   <p>Ton Reward</p>
                   <p>0.1 TON</p>
@@ -34,7 +34,7 @@ const History = () => {
           <div className="history-item blur-round-border-bg">
             <div className="history-description">
               <div className="reward-title">
-                <img src={COIN_IMG?.img.src} width={52} height={52} alt="" />
+                <img src={COIN_IMG?.img.src} width={52} height={52} alt="COIN" />
                 <div className="reward-amount">
                   <p>Dragon Reward</p>
                   <p>4000 DRGN</p>
@@ -49,7 +49,7 @@ const History = () => {
           <div className="history-item blur-round-border-bg">
             <div className="history-description">
               <div className="reward-title">
-                <img src={TON_ICON?.img.src} width={52} height={52} alt="" />
+                <img src={TON_ICON?.img.src} width={52} height={52} alt="history" />
                 <div className="reward-amount">
                   <p>Ton Reward</p>
                   <p>0.1 TON</p>

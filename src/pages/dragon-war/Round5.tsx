@@ -25,11 +25,11 @@ const Round5 = () => {
           <CoinImage5 />
           <Energy />
         </div>
-        <img src={Dragon1?.img.src} alt="" width={39} height={39} className="dragon1" />
-        <img src={Dragon3?.img.src} alt="" width={65} height={65} className="dragon3" />
-        <img src={Dragon4?.img.src} alt="" width={73} height={73} className="dragon4" />
-        <img src={Dragon5?.img.src} alt="" width={55} height={55} className="dragon5" />
-        <img src={Dragon6?.img.src} alt="" width={49} height={49} className="dragon6" />
+        <img src={Dragon1?.img.src} alt="dragon1" width={39} height={39} className="dragon1" />
+        <img src={Dragon3?.img.src} alt="dragon3" width={65} height={65} className="dragon3" />
+        <img src={Dragon4?.img.src} alt="dragon4" width={73} height={73} className="dragon4" />
+        <img src={Dragon5?.img.src} alt="dragon5" width={55} height={55} className="dragon5" />
+        <img src={Dragon6?.img.src} alt="dragon6" width={49} height={49} className="dragon6" />
       </div>
       <div className="footer-blur"></div>
     </div>
