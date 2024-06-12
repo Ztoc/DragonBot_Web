@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 
-const CountdownTimer = ({ initialSeconds }) => {
-  const [seconds, setSeconds] = useState(initialSeconds);
+const CountdownTimer = ({ seconds, setSeconds, type = "minute" }) => {
+  const dispatch = useDispatch();
 
   useEffect(() => {
     let interval;
 
     if (seconds > 0) {
       interval = setInterval(() => {
-        setSeconds((prevSeconds) => prevSeconds - 1);
+        dispatch(setSeconds(seconds - 1));
       }, 1000);
     } else {
       clearInterval(interval);
@@ -23,7 +24,8 @@ const CountdownTimer = ({ initialSeconds }) => {
     return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
   };
 
-  return <h2 style={{ color: seconds < 10 ? "red" : "" }}> {formatTime(seconds)}</h2>;
+  if (type === "minute") return <>{formatTime(seconds)}</>;
+  else return <>{seconds}</>;
 };
 
 export default CountdownTimer;

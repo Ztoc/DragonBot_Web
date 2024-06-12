@@ -12,6 +12,7 @@ import {
   squadDataLeague,
   TurboData,
   UserData,
+  TicketType,
 } from "./data.ts";
 import React, { ReactElement } from "react";
 import { LeagueNameType, LeaguePresets } from "./types.ts";
@@ -189,4 +190,8 @@ export type dragonwarSliceType = {
   currentTime: number;
   round: number;
   remainSec: number;
+  tickets: TicketType;
+  duration: number;
+  participants: number;
+  calcTime: number;
 };

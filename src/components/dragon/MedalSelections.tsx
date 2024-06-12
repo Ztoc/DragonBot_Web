@@ -9,19 +9,19 @@ const MedalSelections = () => {
   return (
     <div className="medal-selections  blur-dragon-round">
       <div className="medal-select">
-        <img src={Bronze_medal?.img.src} className="medal" alt="" />
+        <img src={Bronze_medal?.img.src} className="medal" alt="Bronze" />
         <p>
           0.2 TON <br /> TICKET
         </p>
       </div>
       <div className="medal-select">
-        <img src={Silver_medal?.img.src} className="medal" alt="" />
+        <img src={Silver_medal?.img.src} className="medal" alt="Silver" />
         <p>
           0.5 TON <br /> TICKET
         </p>
       </div>
       <div className="medal-select">
-        <img src={Gold_medal?.img.src} className="medal" alt="" />
+        <img src={Gold_medal?.img.src} className="medal" alt="Gold" />
         <p>
           1 TON <br /> TICKET
         </p>
